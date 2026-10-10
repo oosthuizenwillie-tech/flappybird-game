@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3b629">
+  <title>Smiley Honey · Happy little flights</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="./" aria-label="Smiley Honey home"><img src="assets/smiley-honey-logo.svg" alt="Smiley Honey" width="160" height="120"></a><span class="edition">THE SMILEY HONEY NECTAR QUEST</span><a class="header-cta" href="#honey">Meet our honey <span>↗</span></a></header>
+    <section class="intro"><p class="eyebrow">A LITTLE PLAY. A LOT OF SWEETNESS.</p><h1>Sweet adventures<br><span>start with Smiley.</span></h1><p>Fly through our flower garden, collect nectar, and discover the golden joy of Tupelo.</p></section>
+    <section class="arcade" aria-label="Smiley Honey bee game">
+      <div class="stats"><div>NECTAR POINTS <strong id="score">0</strong></div><div>PERSONAL BEST <strong id="best">0</strong></div><span class="live"><i></i> <span id="health" aria-label="3 hearts remaining">♥ ♥ ♥</span></span></div>
+      <div class="stage">
+        <canvas id="game" width="480" height="640" tabindex="0" aria-label="Game area. Press Space or Arrow Up, click, or tap to flap."></canvas>
+        <div class="overlay" id="overlay"><div class="badge">SMILEY HONEY · NECTAR QUEST</div><h2 id="title">Ready, honey bee?</h2><p id="message">A tap is all it takes.<br>Catch flowers. Dodge rocks, hornets & bug spray.</p><button id="start">Let’s buzz <span>↗</span></button><a class="overlay-honey" href="#honey">Love Tupelo? Meet our honey ↓</a></div>
+      </div>
+      <div class="flower-legend"><span>✿ Flowers <strong>+1</strong></span><span>✺ Golden Tupelo <strong>+5</strong></span></div>
+      <p class="hazard-guide">Dodge rocks · Watch for hornets & spray · 3 hearts</p>
+      <div class="controls"><span><kbd>SPACE</kbd> or <kbd>↑</kbd> to flap</span><span>Click or tap anywhere</span><button id="pause" disabled>Pause</button></div>
+    </section>
+    <section class="honey-promo" id="honey" aria-labelledby="honey-title">
+      <div class="product-art" role="img" aria-label="Illustrated Smiley Honey Tupelo jar">
+        <span class="petal petal-one">✿</span><span class="petal petal-two">✿</span><span class="product-sticker">OUR GOLDEN<br>GAME BONUS</span>
+        <div class="honey-jar"><div class="jar-lid"></div><div class="jar-label"><img src="assets/smiley-honey-logo.svg" alt=""><strong>TUPELO</strong><span>HONEY</span></div></div>
+        <span class="art-caption">A little illustration. A lot of sweetness.</span>
+      </div>
+      <div class="product-copy"><p class="eyebrow">FROM OUR HIVE TO YOUR HAPPY PLACE</p><h2 id="honey-title">More than a<br>golden bonus.</h2><p>Tupelo is the star of our game. Bring the Smiley Honey joy to your table, too.</p><div class="honey-tags"><span>Toast time</span><span>Tea breaks</span><span>Sweet little gifts</span></div><p class="honey-signoff">Find your next sweet favourite with Smiley Honey.</p><a class="shop-cta" href="https://www.smileyhoney.com/" target="_blank" rel="noopener noreferrer">Shop Smiley Honey <span aria-hidden="true">→</span></a></div>
+    </section>
+    <footer>Made with honey & happy thoughts. <span>Stay sweet. Keep buzzing.</span></footer>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
